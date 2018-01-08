@@ -1,0 +1,23 @@
+page-about {
+  img {
+    width: 100%;
+  }
+  // Transição entre a imagem original e a imagem com zoom
+  img[zoom] {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  // Transformação da imagem normal para o zoom, aplicado scale (você pode mudar essa linha de acordo com sua necessidade)
+  .zoomed > img[zoom] {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.2);
+  }
+  // Necessário para estilizar o grid
+  ion-col {
+    text-align: center;
+    button {
+      padding: 0px !important;
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Galeria</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let img of images">
+        <button [class.zoomed]="zoomedImage != null && img == zoomedImage" (click)="zoomImage(img)"> <!--(click)="openImage()"(click)="zoomImage(img)">-->
+          <img src="{{img.image_path}}" zoom>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

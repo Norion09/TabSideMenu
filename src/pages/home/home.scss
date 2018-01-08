@@ -1,0 +1,18 @@
+page-home {
+  .row{
+    color: black;
+    padding: 0.1em;
+  }
+  .titleCard{
+    font-size: 100%;
+  }
+  .item-md ion-avatar[item-start]{
+    margin: 4px 4px 4px 0;
+  }
+  .item{
+    padding-left: 4px;
+  }
+  .card .note-md {
+    padding-left: 15px;
+  }
+}
